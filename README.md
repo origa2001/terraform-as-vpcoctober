@@ -1,8 +1,9 @@
 # terraform-as-vpcoctober
-
+```hcl
 module "vpc" {
-    source = ""
-    version = "0.0.2"
+    source = "origa2001/vpcoctober/as"
+  
+    version = "0.0.3"
     region = "us-east-2"
     vpc_cidr = "10.0.0.0/16"
     vpc_name = "olga"
@@ -13,3 +14,4 @@ module "vpc" {
     key_name = "kaizen"
     type = true
 }
+```
