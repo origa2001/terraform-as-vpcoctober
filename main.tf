@@ -9,6 +9,7 @@ resource "aws_vpc" "main" {
   }
 }
 
+
 resource "aws_subnet" "main1" {
   vpc_id     = aws_vpc.main.id
   cidr_block = var.subnet1_cidr
@@ -18,6 +19,7 @@ resource "aws_subnet" "main1" {
     Name = "Main1"
   }
 }
+
 
 resource "aws_subnet" "main2" {
   vpc_id     = aws_vpc.main.id
